@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="ReText 4.1.2">
+<title>github</title>
+</head>
+<body>
+<h1>GitHub</h1>
+<h2>Obtener el Repositorio del Semillero</h2>
+<p>Una vez haya instalado <strong>GitHub</strong>, si está en <strong><em>Windows</em></strong> diríjase a <strong>Anaconda Prompt</strong> y si está en <strong><em>GNU/Linux</em></strong> o <strong><em>MacOS</em></strong>, abra una nueva terminal. En la terminal, use el comando "<code>cd</code>" para desplazarse por los directorios de su computador; escoja donde quiere que esté el repositorio del semillero y allí ejecute el siguiente comando</p>
+<pre><code class="bash">    git clone https://github.com/julian20250/SemilleroPython.git
+</code></pre>
+
+<p>Notará que en su instancia se creará la carpeta SemilleroPython. Aquí encontrará los documentos del semillero. Para actualizar los contenidos de esta carpeta, entre en ella y digite el siguiente comando</p>
+<pre><code class="bash">    git pull
+</code></pre>
+
+<p>No hace falta registrarse en <strong>GitHub</strong> para ejecutar estos comandos.</p>
+<hr>
+<h2>Crear y Actualizar un Repositorio</h2>
+<h3>Crear y Enlazar</h3>
+<p>Para hacer esto es necesario estar registrado en <strong>GitHub</strong>. En dicha página, cree un repositorio. Ubíquese dentro de la carpeta que desea mantener como repositorio y digite el siguiente bloque de comandos</p>
+<pre><code class="bash">    touch README.md
+    git init
+    git add README.md
+    git add *
+    git commit -m &quot;Mi primer comentario&quot;
+    git remote add origin https://github.com/&lt;nombre-de-usuario&gt;/&lt;nombre-del-repositorio&gt;.git
+    git push -u origin master
+</code></pre>
+
+<p>Ahora el repositorio de su computador estará enlazado al repositorio de <strong>GitHub</strong>, y compartirán los mismos archivos.</p>
+<h3>Añadir o Actualizar Archivos</h3>
+<p>Para ver los archivos que tienen cambios use el siguiente comando</p>
+<pre><code class="bash">    git status
+</code></pre>
+
+<p>Para añadir elementos</p>
+<pre><code class="bash">    git add &lt;nombre-y-extension-del-elemento&gt;
+</code></pre>
+
+<p>Para comentar los cambios (es necesario que los cambios estén comentados para que puedan ser actualizados en el repositorio virtual)</p>
+<pre><code class="bash">    git commit
+</code></pre>
+
+<p>Para actualizar el repositorio virtual</p>
+<pre><code class="bash">    git push
+</code></pre>
+
+<hr>
+<p>Esta información puede distribuirse libremente. </p>
+</body>
+</html>
