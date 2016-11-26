@@ -2,3 +2,8 @@
 /Numpy/.ipynb_checkpoints/*
 /Matplotlib/.ipynb_checkpoints/*
 \.ipynb_*
+*.aux
+*.log
+*.out
+*.gz
+*.tex
