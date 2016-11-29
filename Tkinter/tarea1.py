@@ -17,7 +17,7 @@ def open_file():
     return f
 l=[int(x) for x in open_file()]
 print l
-count=3
+count=l[-1]+1
 try:
     while True:
         bandera=True
